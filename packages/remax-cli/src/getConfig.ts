@@ -11,6 +11,7 @@ export interface RemaxOptions {
   progress: boolean;
   output: string;
   rootDir: string;
+  compress?: boolean;
   UNSAFE_wechatTemplateDepth: number;
   alias?: {
     [key: string]: string;

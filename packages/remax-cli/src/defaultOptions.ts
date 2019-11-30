@@ -7,6 +7,7 @@ const defaultOptions: RemaxOptions = {
   progress: true,
   output: 'dist',
   rootDir: 'src',
+  compress: process.env.NODE_ENV === 'production',
   UNSAFE_wechatTemplateDepth: 20,
 };
 
