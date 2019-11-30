@@ -193,4 +193,15 @@ describe('alipay', () => {
     expect(newHandleClick).not.toBe(handleClick);
     expect(newHandleAnimationStart).toBe(handleAnimationStart);
   });
+
+  fit('useEffect works', () => {
+    const cb = jest.fn();
+    const Page = () => {
+      React.useEffect(cb);
+
+      return <View>app</View>;
+    };
+    const container = new Container(p);
+    render(<Page />, container);
+  });
 });
